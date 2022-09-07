@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\italo-workspace\\repos\\Senai-DesktopMultApps\\MultApps\\clients\\MultApps.Client.Windows\\MultApps.Client.Windows.csproj",
         "projectName": "MultApps.Client.Windows",
         "projectPath": "C:\\italo-workspace\\repos\\Senai-DesktopMultApps\\MultApps\\clients\\MultApps.Client.Windows\\MultApps.Client.Windows.csproj",
-        "packagesPath": "C:\\Users\\TEMP\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Suporte\\.nuget\\packages\\",
         "outputPath": "C:\\italo-workspace\\repos\\Senai-DesktopMultApps\\MultApps\\clients\\MultApps.Client.Windows\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TEMP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Suporte\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
