@@ -8,7 +8,7 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Suporte\\.nuget\\packages\\": {}
+    "C:\\Users\\TEMP.CEPEASLAB14_18\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,11 +16,11 @@
       "projectUniqueName": "C:\\italo-workspace\\repos\\Senai-DesktopMultApps\\MultApps\\server\\MultApps.Server.Core\\MultApps.Server.Core.csproj",
       "projectName": "MultApps.Server.Core",
       "projectPath": "C:\\italo-workspace\\repos\\Senai-DesktopMultApps\\MultApps\\server\\MultApps.Server.Core\\MultApps.Server.Core.csproj",
-      "packagesPath": "C:\\Users\\Suporte\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\TEMP.CEPEASLAB14_18\\.nuget\\packages\\",
       "outputPath": "C:\\italo-workspace\\repos\\Senai-DesktopMultApps\\MultApps\\server\\MultApps.Server.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Suporte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TEMP.CEPEASLAB14_18\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

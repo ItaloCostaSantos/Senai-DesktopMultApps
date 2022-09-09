@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\Suporte\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Suporte\\.nuget\\packages"
+      "C:\\Users\\TEMP.CEPEASLAB14_18\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\TEMP.CEPEASLAB14_18\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

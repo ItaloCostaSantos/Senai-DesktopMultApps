@@ -43,9 +43,9 @@
             this.btnAbrirFormPesoIdeal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(255)))));
             this.btnAbrirFormPesoIdeal.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirFormPesoIdeal.Image")));
             this.btnAbrirFormPesoIdeal.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAbrirFormPesoIdeal.Location = new System.Drawing.Point(29, 26);
+            this.btnAbrirFormPesoIdeal.Location = new System.Drawing.Point(29, 23);
             this.btnAbrirFormPesoIdeal.Name = "btnAbrirFormPesoIdeal";
-            this.btnAbrirFormPesoIdeal.Size = new System.Drawing.Size(143, 105);
+            this.btnAbrirFormPesoIdeal.Size = new System.Drawing.Size(143, 103);
             this.btnAbrirFormPesoIdeal.TabIndex = 0;
             this.btnAbrirFormPesoIdeal.Text = "Peso Ideal";
             this.btnAbrirFormPesoIdeal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -61,13 +61,14 @@
             this.btnAbrirFormMatriculaAluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(255)))));
             this.btnAbrirFormMatriculaAluno.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirFormMatriculaAluno.Image")));
             this.btnAbrirFormMatriculaAluno.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAbrirFormMatriculaAluno.Location = new System.Drawing.Point(215, 24);
+            this.btnAbrirFormMatriculaAluno.Location = new System.Drawing.Point(215, 21);
             this.btnAbrirFormMatriculaAluno.Name = "btnAbrirFormMatriculaAluno";
-            this.btnAbrirFormMatriculaAluno.Size = new System.Drawing.Size(142, 107);
+            this.btnAbrirFormMatriculaAluno.Size = new System.Drawing.Size(142, 105);
             this.btnAbrirFormMatriculaAluno.TabIndex = 1;
             this.btnAbrirFormMatriculaAluno.Text = "Matrícula de Aluno";
             this.btnAbrirFormMatriculaAluno.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbrirFormMatriculaAluno.UseVisualStyleBackColor = false;
+            this.btnAbrirFormMatriculaAluno.Click += new System.EventHandler(this.btnAbrirFormMatriculaAluno_Click);
             // 
             // btnAbrirFormReajusteSalarial
             // 
@@ -78,9 +79,9 @@
             this.btnAbrirFormReajusteSalarial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(48)))), ((int)(((byte)(255)))));
             this.btnAbrirFormReajusteSalarial.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirFormReajusteSalarial.Image")));
             this.btnAbrirFormReajusteSalarial.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAbrirFormReajusteSalarial.Location = new System.Drawing.Point(405, 26);
+            this.btnAbrirFormReajusteSalarial.Location = new System.Drawing.Point(405, 23);
             this.btnAbrirFormReajusteSalarial.Name = "btnAbrirFormReajusteSalarial";
-            this.btnAbrirFormReajusteSalarial.Size = new System.Drawing.Size(142, 105);
+            this.btnAbrirFormReajusteSalarial.Size = new System.Drawing.Size(142, 103);
             this.btnAbrirFormReajusteSalarial.TabIndex = 2;
             this.btnAbrirFormReajusteSalarial.Text = "Reajuste Salarial";
             this.btnAbrirFormReajusteSalarial.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -88,10 +89,10 @@
             // 
             // Principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(575, 156);
+            this.ClientSize = new System.Drawing.Size(575, 157);
             this.Controls.Add(this.btnAbrirFormReajusteSalarial);
             this.Controls.Add(this.btnAbrirFormMatriculaAluno);
             this.Controls.Add(this.btnAbrirFormPesoIdeal);
