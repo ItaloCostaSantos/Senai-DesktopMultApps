@@ -15,35 +15,19 @@ namespace MultApps.Client.Windows.Funcionalidades
         public frmMatriculaAluno()
         {
             InitializeComponent();
-        }
-
-        private void txtAnoUltimoAniversario_Enter(object sender, EventArgs e)
-        {
-            if (txtAnoNascimento.Text.Trim().Length < 4)
-            {
-                MessageBox.Show("É preciso informar o ANO DE " + "NASCIMENTO com 4 digitos", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtAnoNascimento.Focus();
-            }
-        }
-
-        private void txtAnoUltimoAniversario_Validating(object sender, CancelEventArgs e)
-        {
-            if (txtAnoUltimoAniversario.Text != String.Empty && Convert.ToInt32(txtAnoUltimoAniversario.Text) <= Convert.ToInt32(txtAnoNascimento.Text))
-            {
-                MessageBox.Show("O ANO DO ÚLTIMO ANIVERSÁRIO " + "deve ser superior ao do ANO DE NASCIMENTO.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                e.Cancel = true;
-            }
-        }
-
+            lblHoje.Text = "Hoje é " + DateTime.Now.ToShortDateString();
+        }                
         private void btnIdentificarCategoria_Click(object sender, EventArgs e)
         {
-            if (txtNome.Text == String.Empty || txtAnoNascimento.Text == String.Empty || txtAnoUltimoAniversario.Text == String.Empty)
+            TimeSpan tsQuantidadeDias = DateTime.Now.Date - dtpDataDeNascimento.Value;
+            int idade = (tsQuantidadeDias.Days / 365);
+
+            if (txtNome.Text == String.Empty)
             {
                 MessageBox.Show("Todos os dados " + "solicitados devem ser informados.", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                int idade = Convert.ToInt32(txtAnoUltimoAniversario.Text) - Convert.ToInt32(txtAnoNascimento.Text);
                 if (idade > 17)
                 {
                     lblCategoria.Text = "Adulto";

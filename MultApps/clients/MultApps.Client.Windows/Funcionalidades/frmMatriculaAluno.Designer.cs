@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtAnoNascimento = new System.Windows.Forms.TextBox();
-            this.txtAnoUltimoAniversario = new System.Windows.Forms.TextBox();
             this.btnIdentificarCategoria = new System.Windows.Forms.Button();
             this.lblCategoria = new System.Windows.Forms.Label();
+            this.dtpDataDeNascimento = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblHoje = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -47,24 +46,6 @@
             this.label1.Size = new System.Drawing.Size(43, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "&Nome:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "&Ano nascimento:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(165, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "&Ano último aniversário:";
             // 
             // label4
             // 
@@ -81,23 +62,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(303, 23);
             this.txtNome.TabIndex = 4;
-            // 
-            // txtAnoNascimento
-            // 
-            this.txtAnoNascimento.Location = new System.Drawing.Point(96, 45);
-            this.txtAnoNascimento.Name = "txtAnoNascimento";
-            this.txtAnoNascimento.Size = new System.Drawing.Size(58, 23);
-            this.txtAnoNascimento.TabIndex = 5;
-            this.txtAnoNascimento.Validating += new System.ComponentModel.CancelEventHandler(this.txtAnoUltimoAniversario_Validating);
-            // 
-            // txtAnoUltimoAniversario
-            // 
-            this.txtAnoUltimoAniversario.Location = new System.Drawing.Point(293, 45);
-            this.txtAnoUltimoAniversario.Name = "txtAnoUltimoAniversario";
-            this.txtAnoUltimoAniversario.Size = new System.Drawing.Size(55, 23);
-            this.txtAnoUltimoAniversario.TabIndex = 6;
-            this.txtAnoUltimoAniversario.Enter += new System.EventHandler(this.txtAnoUltimoAniversario_Enter);
-            this.txtAnoUltimoAniversario.Validating += new System.ComponentModel.CancelEventHandler(this.txtAnoUltimoAniversario_Validating);
             // 
             // btnIdentificarCategoria
             // 
@@ -119,19 +83,43 @@
             this.lblCategoria.TabIndex = 8;
             this.lblCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // dtpDataDeNascimento
+            // 
+            this.dtpDataDeNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataDeNascimento.Location = new System.Drawing.Point(126, 42);
+            this.dtpDataDeNascimento.Name = "dtpDataDeNascimento";
+            this.dtpDataDeNascimento.Size = new System.Drawing.Size(100, 23);
+            this.dtpDataDeNascimento.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 15);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Data de Nascimento:";
+            // 
+            // lblHoje
+            // 
+            this.lblHoje.AutoSize = true;
+            this.lblHoje.Location = new System.Drawing.Point(233, 47);
+            this.lblHoje.Name = "lblHoje";
+            this.lblHoje.Size = new System.Drawing.Size(0, 15);
+            this.lblHoje.TabIndex = 11;
+            // 
             // frmMatriculaAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 125);
+            this.Controls.Add(this.lblHoje);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dtpDataDeNascimento);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.btnIdentificarCategoria);
-            this.Controls.Add(this.txtAnoUltimoAniversario);
-            this.Controls.Add(this.txtAnoNascimento);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmMatriculaAluno";
             this.Text = "frmMatriculaAluno";
@@ -143,13 +131,12 @@
         #endregion
 
         private Label label1;
-        private Label label2;
-        private Label label3;
         private Label label4;
         private TextBox txtNome;
-        private TextBox txtAnoNascimento;
-        private TextBox txtAnoUltimoAniversario;
         private Button btnIdentificarCategoria;
         private Label lblCategoria;
+        private DateTimePicker dtpDataDeNascimento;
+        private Label label2;
+        private Label lblHoje;
     }
 }

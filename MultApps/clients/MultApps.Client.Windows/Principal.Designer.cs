@@ -51,6 +51,7 @@
             this.btnAbrirFormPesoIdeal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbrirFormPesoIdeal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnAbrirFormPesoIdeal.UseVisualStyleBackColor = false;
+            this.btnAbrirFormPesoIdeal.Click += new System.EventHandler(this.btnAbrirFormPesoIdeal_Click);
             // 
             // btnAbrirFormMatriculaAluno
             // 
@@ -86,6 +87,7 @@
             this.btnAbrirFormReajusteSalarial.Text = "Reajuste Salarial";
             this.btnAbrirFormReajusteSalarial.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbrirFormReajusteSalarial.UseVisualStyleBackColor = false;
+            this.btnAbrirFormReajusteSalarial.Click += new System.EventHandler(this.btnAbrirFormReajusteSalarial_Click);
             // 
             // Principal
             // 

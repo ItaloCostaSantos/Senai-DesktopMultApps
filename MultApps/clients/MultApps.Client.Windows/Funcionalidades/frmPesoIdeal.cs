@@ -12,9 +12,37 @@ namespace MultApps.Client.Windows.Funcionalidades
 {
     public partial class frmPesoIdeal : Form
     {
+        RadioButton rbnSelecionado = null;
         public frmPesoIdeal()
         {
             InitializeComponent();
+        }
+
+        private void SetPesoIdeal()
+        {
+            try
+            {
+                double altura = Convert.ToDouble(txtAltura.Text);
+                double pesoIdeal;
+                rbnSelecionado = gbxSexo.Controls.OfType<RadioButton>().SingleOrDefault(r => r.Checked == true);
+
+                if (rbnSelecionado.Text =="Masculino")
+                    pesoIdeal = (72.7 * altura) - 58;
+                else
+                    pesoIdeal = (62.1 * altura) - 44.7;
+
+
+                lblPesoIdeal.Text = pesoIdeal.ToString("N");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Selecione o sexo e informe a altura corretamente", "Atenção!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+        private void txtAltura_TextChanged(object sender, EventArgs e)
+        {
+            SetPesoIdeal();
         }
     }
 }
